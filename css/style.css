@@ -1,0 +1,63 @@
+        .body {
+            background-color: #ccc;
+        }
+
+        .main {
+            background-color: white;
+            max-width: 1200px;
+            margin: auto;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .boxColumn {
+            border:2px solid rebeccapurple;
+        }
+
+        .box {
+            min-height: 100px;
+            border-radius: 20px;
+            flex: 1;
+            margin: 20px;
+        }
+
+        .orange {
+            background-color: orangered;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            min-height: 420px;
+            background-color: yellow;
+
+        }
+
+        @media screen and (min-width: 500px) {
+            .box {
+                flex: 100%;
+
+            }
+            .boxColumn {
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            max-width: 33%;
+            }
+            .main {
+                display:flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+            }
+        }
